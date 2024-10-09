@@ -1,0 +1,19 @@
+syntax = "proto3";  // Specifies the version of Protocol Buffers (proto3 is the latest stable version).
+
+package predict;  // Package name for grouping related messages and services.
+
+// Service definition for prediction
+service PredictionService {
+  // Unary RPC for making a prediction
+  rpc Predict (PredictRequest) returns (PredictResponse) {}
+}
+
+// Message format for sending prediction requests
+message PredictRequest {
+  repeated float features = 1;  // A list of features to be used for the prediction (repeated indicates an array).
+}
+
+// Message format for receiving prediction responses
+message PredictResponse {
+  repeated int32 predictions = 1;  // A list of predicted classes (e.g., 0 or 1 for binary classification).
+}
