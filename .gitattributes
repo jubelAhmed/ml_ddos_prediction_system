@@ -1,5 +1,5 @@
 # Force Python files as Python
-*.py linguist-language=Python
+*.ipynb linguist-language=Python
 
 # Ignore CSS files for language stats
 *.css linguist-vendored
