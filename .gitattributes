@@ -1,0 +1,29 @@
+# Force Python files as Python
+*.py linguist-language=Python
+
+# Ignore CSS files for language stats
+*.css linguist-vendored
+
+# Ignore SQLite databases
+*.db linguist-vendored
+*.sqlite linguist-vendored
+
+# Ignore virtual environments and compiled files
+venv/** linguist-vendored
+env/** linguist-vendored
+__pycache__/** linguist-vendored
+*.so linguist-vendored
+
+# Ignore Jupyter notebook checkpoints
+.ipynb_checkpoints/** linguist-vendored
+
+# Ignore images
+*.png linguist-vendored
+*.jpg linguist-vendored
+*.jpeg linguist-vendored
+*.gif linguist-vendored
+*.svg linguist-vendored
+
+# Optional: Ignore config and log files
+*.log linguist-vendored
+*.lock linguist-vendored
